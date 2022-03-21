@@ -1,9 +1,12 @@
-# Live Bus Tracker
+# Real Time Bus Tracker
  MBTA Bus Tracker
 
 DESCRIPTION
 
-This program retrieves data on the busses currently operating in the boston area and displays both their current location as well as their bearing.
+This program retrieves actual real-time data on the busses currently operating in the boston area and displays both their current location as well as their bearing.
+Using APIs from:
+Massachusetts Bay Transportation Authority
+Mapbox
 
 MY UPDATES
 1) Made a loop to update a marker for each bus instead of just 1
