@@ -60,14 +60,46 @@ markerArray[3] = new mapboxgl.Marker({
 })
 .setLngLat([-71.392761, 42.357575])
 .addTo(map);
-
+markerArray[4] = new mapboxgl.Marker({
+	color: "#FFFF00",//yellow
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
+markerArray[5] = new mapboxgl.Marker({
+	color: "#00FFFF",//Aqua
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
+markerArray[6] = new mapboxgl.Marker({
+	color: "#FFFFFF",//White
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
+markerArray[7] = new mapboxgl.Marker({
+	color: "#000000",//blak
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
+markerArray[8] = new mapboxgl.Marker({
+	color: "#552500",//brown
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
+markerArray[10] = new mapboxgl.Marker({
+	color: "#450080",//prpl
+	rotationAlignment: 'map'
+})
+.setLngLat([0, 0])
+.addTo(map);
 
 async function run(){
     // get bus data    
 	const locations = await getBusLocations();
-	//console.log(new Date());
-	//console.log(locations);
-	
 
 	//go through the set of vehicles (there's 4 of them) and mark their locations
 	locations.forEach((vehicle, i) =>{
